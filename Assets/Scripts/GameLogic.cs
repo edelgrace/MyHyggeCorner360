@@ -437,6 +437,8 @@ public class GameLogic : MonoBehaviour {
                     }
 
                     state = "explore";
+                    grid.SetActive(false);
+                    sheet.SetActive(true);
                 }
 
                 furniture.transform.localPosition = new Vector3(newX, newY, newZ);
